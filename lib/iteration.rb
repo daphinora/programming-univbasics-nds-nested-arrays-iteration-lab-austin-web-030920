@@ -49,14 +49,12 @@ total = 0
 row_index = 0
   while row_index < src.count do
     if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0
-      then total += src[row_index].sum
+      then total += src[row_index][0]+src[row_index][1]
     end 
     row_index+=1
   end
 total
 end
-
-
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
